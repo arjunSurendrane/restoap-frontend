@@ -32,7 +32,7 @@ function Footer() {
           Copyright © {year}. All Rights reserved RestoAp
         </Typography>
       </Box>
-      <Box>
+      {/* <Box>
         <Typography
           variant="subtitle2"
           sx={{ fontSize: '12px', fontWeight: 400, color: '#212b36' }}
@@ -49,7 +49,7 @@ function Footer() {
             </span>
           </a>
         </Typography>
-      </Box>
+      </Box> */}
     </Box>
   );
 }

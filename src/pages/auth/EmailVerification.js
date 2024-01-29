@@ -24,10 +24,10 @@ EmailVerification.propTypes = {
 };
 
 export default function EmailVerification({ email }) {
-  const [otp, setOtp] = useState("");
+  const [otp, setOtp] = useState('');
   const [minutes, setMinutes] = useState(4);
   const [seconds, setSeconds] = useState(30);
-  const { user } = useAuthContext()
+  const { user } = useAuthContext();
   useEffect(() => {
     const interval = setInterval(() => {
       if (seconds > 0) {
@@ -51,15 +51,14 @@ export default function EmailVerification({ email }) {
 
   const handleSendVerificationButton = async () => {
     try {
-      console.log('send verification mail')
-      API.post('/auth/resend-verification-email', { email })
+      console.log('send verification mail');
+      API.post('/auth/resend-verification-email', { email });
       setMinutes(4);
-      setSeconds(30)
+      setSeconds(30);
     } catch (error) {
-      console.log({ error })
+      console.log({ error });
     }
-
-  }
+  };
   const year = new Date().getFullYear();
   return (
     <>
@@ -90,7 +89,12 @@ export default function EmailVerification({ email }) {
             <Typography sx={{ color: 'text.secondary', mb: 3 }}>
               Still can't find the email ?
             </Typography>
-            <Button size="large" variant="contained" disabled={!(minutes === 0 && seconds === 0)} onClick={handleSendVerificationButton}>
+            <Button
+              size="large"
+              variant="contained"
+              disabled={!(minutes === 0 && seconds === 0)}
+              onClick={handleSendVerificationButton}
+            >
               Resend Verification Mail
             </Button>
             {seconds > 0 || minutes > 0 ? (
@@ -113,10 +117,10 @@ export default function EmailVerification({ email }) {
               }}
             >
               <Typography sx={{ fontSize: '12px', fontWeight: 400 }}>
-                Copyright © {year} RestoAp | All Rights Reserved | Design & Developed By
-                <a style={{ textDecoration: 'none' }} href="https://b-jelt.com/">
+                Copyright © {year} RestoAp | All Rights Reserved
+                {/* <a style={{ textDecoration: 'none' }} href="https://b-jelt.com/">
                   <span style={{ color: '#BB3138' }}>B-JeLT Technologies Pvt Ltd</span>
-                </a>
+                </a> */}
               </Typography>
             </Box>
           </CenteredContent>

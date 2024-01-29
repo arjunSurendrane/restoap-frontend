@@ -66,15 +66,15 @@ export default function LoginLayout({ children, illustration, title }) {
           }}
         >
           <Typography sx={{ fontSize: '12px', fontWeight: 400 }}>
-            Copyright © {year.getFullYear()} RestoAp | All Rights Reserved | Design & Developed By
-            <a
+            Copyright © {year.getFullYear()} RestoAp | All Rights Reserved
+            {/* <a
               style={{ textDecoration: 'none' }}
               href="https://b-jelt.com/"
               target="_blank"
               rel="noreferrer"
             >
               <span style={{ color: '#BB3138' }}>B-JeLT Technologies Pvt Ltd</span>
-            </a>
+            </a> */}
           </Typography>
         </Box>
       </Grid>
