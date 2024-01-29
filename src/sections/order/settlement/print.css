@@ -1,0 +1,9 @@
+/* print-styles.css */
+@media print {
+  /* Define print-specific styles here */
+  body {
+    font-size: 12px; /* Adjust font size for printing */
+    margin: 0; /* Remove default margins */
+  }
+  /* Customize other styles as needed */
+}

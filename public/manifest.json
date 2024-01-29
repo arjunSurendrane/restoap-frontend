@@ -1,0 +1,20 @@
+{
+  "name": "RestoAp",
+  "short_name": "RestoAp",
+  "display": "standalone",
+  "start_url": "/",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "favicon/Resto.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon/Resto.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
